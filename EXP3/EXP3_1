@@ -1,0 +1,49 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+
+int main()  
+{
+    int x,a,arr[10],y,w;
+    int large; 
+    int small = arr[0];
+    double z; 
+    
+    cout<<"Please enter 10 integers: \n";
+    for(x=0;x<10;++x)
+    {
+     cin >> arr[x];
+     y += arr[x];
+    }
+    
+    for(x=0;x<10;x++)
+    {
+          
+    if (arr[x] > large)
+    {
+        large = arr[x];
+    }
+    }
+    
+    for(x=0;x<10;x++)
+    {
+          
+    if (arr[x] < small)
+    {
+        small = arr[x];
+    }
+    }
+    
+
+    cout << "The largest number is: " << large << "\n";
+    cout << "The smallest number is: " << small << "\n";
+    cout << "Sum: " << y << "\n";
+    z = y/10;
+    cout << "Average: " << z << "\n";
+
+
+    return 0;
+}

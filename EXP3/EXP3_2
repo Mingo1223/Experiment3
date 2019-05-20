@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+
+int main()  
+{
+    int A [] = { 32, 33, 32, 34, 35, 36, 38};
+    int B [] = { 23, 24, 26, 22, 29, 27, 23};
+    int C [] = { 30, 29, 26, 28, 29, 27, 29};
+
+    for (int x=0;x<7;x++)
+     cout << "Province A, Day " << x+1 << ": " << A[x] << "\n"; 
+     
+    for (int x=0;x<7;x++) 
+     cout << "Province B, Day " << x+1 << ": " << B[x] << "\n";
+     
+    for (int x=0;x<7;x++)
+     cout << "Province C, Day " << x+1 << ": " << C[x] << "\n";
+    return 0;
+}
